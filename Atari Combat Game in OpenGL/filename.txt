@@ -1,0 +1,14 @@
+
+     *********LIST OF HIGH SCORES*********
+
+Sr No.              NAME               SCORE
+1                   Abdullah              97
+2                   Bilal                 96
+3                   Usman                 93
+4                   Saim                  90
+5                   Eman                  87
+6                   Siddique              83
+7                   Ahsan                 72
+8                   Faisal                70
+9                   Taimoor               62
+10                  Basiq                 58
