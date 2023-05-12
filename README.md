@@ -1,2 +1,2 @@
 # Semetser-Projects
-Semester Projects from 1st Sem till Last.
+This is my GitHub repository where I store my progress from the first semester of my computer science course. In this repository, I have uploaded various assignments and projects that I have completed using different programming languages and tools. I have also documented my learning process and challenges in README files. This repository showcases my skills and interests as a beginner programmer.
