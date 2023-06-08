@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1248.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Feedback"> 
+   <children>
+      <!-- <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5672a9" height="64.0" layoutX="170.0" layoutY="30.0" stroke="WHITE" strokeType="INSIDE" width="1036.0" />
+      
+      <Text layoutX="596.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Submit Feedback" wrappingWidth="261.2764892578125">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text> -->
+      <Text layoutX="427.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Accordion />
+      <Rectangle arcHeight="5.0" fill="#5673a6" height="719.0" layoutY="-3.0" stroke="#5673a8" strokeLineCap="ROUND" strokeType="INSIDE" width="105.0" />
+      <Button blendMode="SOFT_LIGHT" layoutY="264.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="105.0" onAction="#initializee" >
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button blendMode="DARKEN" layoutY="125.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="105.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button blendMode="DARKEN" layoutY="193.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="105.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="27.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Abdullahs%20Part/dashboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="60.0" layoutX="23.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Abdullahs%20Part/browse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="27.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Abdullahs%20Part/feedback.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="110.0" layoutX="-4.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Abdullahs%20Part/Free_Sample_By_Wix.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="container" >
+    <!-- Your existing FXML content here -->
+      </Pane>
+      <!-- <TextField layoutX="219.0" layoutY="153.0" prefHeight="44.0" prefWidth="360.0" promptText="Name">
+         <font>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5672a9" height="64.0" layoutX="170.0" layoutY="30.0" stroke="WHITE" strokeType="INSIDE" width="1036.0" />
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      
+      <Text layoutX="596.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Submit Feedback" wrappingWidth="261.2764892578125">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <TextField layoutX="217.0" layoutY="220.0" prefHeight="44.0" prefWidth="360.0" promptText="CNIC">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Text layoutX="217.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Problem">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ChoiceBox layoutX="214.0" layoutY="341.0" prefHeight="44.0" prefWidth="366.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:id="Electricity" fx:value="Electricity Problem" />
+               <String fx:id="water" fx:value="Water Problem" />
+               <String fx:id="road" fx:value="Road Problem" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <TextArea layoutX="216.0" layoutY="506.0" prefHeight="153.0" prefWidth="366.0" promptText="Description">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+      <TextField layoutX="664.0" layoutY="153.0" prefHeight="44.0" prefWidth="360.0" promptText="Any Bugs?">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="886.0" layoutY="220.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="137.0" text="Choose File">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="893.0" layoutY="592.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="131.0" text="Submit" onAction="#submit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button> -->
+   </children>
+</AnchorPane>
